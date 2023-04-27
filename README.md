@@ -18,6 +18,31 @@ npm install react-hook-form yup @hookform/resolvers
 npm start
 ```
 
+## How to deploy
+```
+npm run build
+
+npm install -g firebase-tools
+```
+
+> If there is Error: EACCES: permission denied
+
+```
+sudo npm install -g firebase-tools
+```
+
+```
+firebase login
+
+firebase init
+
+firebase deploy
+```
+
+Hosting URL: https://react-social-media-b1f5f.web.app
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

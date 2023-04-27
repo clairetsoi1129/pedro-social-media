@@ -27,8 +27,14 @@ export const Main = () => {
 
     
   return (
+    <>
+    {postsList &&
     <div>{postsList?.map((post) => (
-      <Post post={post}/>
-    ))}</div>
+      <Post key={post.id} post={post}/>
+    ))}</div>}
+    {(postsList == null || postsList.length === 0) && 
+      <div><h1>No Post yet</h1></div> 
+    }
+    </>
   )
 };
